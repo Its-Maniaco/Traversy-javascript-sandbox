@@ -2,12 +2,16 @@ let amount = 'hello';
 
 // Convert string to number
 amount = parseInt(amount);
+console.log("amount parseInt: ", amount) //NaN
 amount = +amount;
 amount = Number(amount);
 
+amount = 33
 // Convert number to string
 amount = amount.toString();
+console.log("amount.toString(): ", amount, typeof amount)
 amount = String(amount);
+console.log("String(amount): ", amount, typeof amount)
 
 // Convert string to decimal
 amount = parseFloat(amount);

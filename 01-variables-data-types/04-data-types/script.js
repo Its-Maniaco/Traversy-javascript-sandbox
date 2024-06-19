@@ -35,7 +35,7 @@ function sayHello() {
 
 const output = sayHello;
 
-console.log(output, typeof output);
+console.log("output = SayHello",output, typeof output);
 
 // More info on why typeof null == object
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof#typeof_null

@@ -37,5 +37,32 @@ const people = [
   },
 ];
 
+// This creates array tht if person not under 25, that index value is undefined
+const youngPeopleWrong = people.map( (person) => {
+  if (person.age <=25) {
+    return {
+      name: person.firstName + person.lastName,
+      email: person.email
+    }
+  }
+}) 
+console.log(youngPeopleWrong)
+
+const youngPeople = people.filter((person) => person.age <= 25)
+.map((person) => ({
+  name: person.firstName+person.lastName,
+  email: person.email
+}))
+console.log(youngPeople)
+
 // Challenge 2
 const numbers = [2, -30, 50, 20, -12, -9, 7];
+
+const sum = numbers.filter((curr) => curr>0)
+.reduce((accumulator, curr) => accumulator+curr, 0)
+console.log(sum)
+
+// Challenge 3
+const words = ['coder', 'programmer', 'developer'];
+const capWords = words.map((word) => word[0].toUpperCase()+word.slice(1,word.length))
+console.log(capWords)

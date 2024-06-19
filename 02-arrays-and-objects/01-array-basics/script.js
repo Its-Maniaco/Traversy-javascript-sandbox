@@ -10,9 +10,11 @@ const fruits = new Array('apple', 'grape', 'orange');
 // Get value by index
 x = numbers[0];
 
-x = numbers[0] + numbers[3];
+x = fruits[0] + fruits[2];
+console.log("[0]+[2]: ", x);
 
 x = `My favorite fruit is an ${fruits[2]}`;
+console.log(x);
 
 x = numbers.length;
 

@@ -25,9 +25,10 @@ x = arr.indexOf(28);
 
 // Return array as a string
 x = arr.toString();
+console.log("arr.toString(): ", x, typeof x, x.slice(0,4))
 x = arr.join();
 
-// slice() returns selected elements in an array, as a new array. Slice takes in the index of the first element and the index of the last element to be included in the new array.
+// slice() returns selected elements in an array, as a new array. slice(index of the first element, index of the last element to be included)
 x = arr.slice(1, 4);
 
 // splice() works like slice() except it takes the index of the first element and the number of elements after that as a second argument. it also mutates the original array where slice() does not

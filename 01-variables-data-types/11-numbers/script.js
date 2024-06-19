@@ -7,6 +7,7 @@ x = num.toString();
 // To get the length
 x = num.toString().length;
 
+//toFixed(n) provides n length after the decimal point; toPrecision(x) provides x total length.
 // toFixed() - returns a string representation of the number with a specified number of decimals
 x = num.toFixed(2);
 
